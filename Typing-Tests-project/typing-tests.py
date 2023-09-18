@@ -14,7 +14,7 @@ Tests = ["Far far away, behind the word mountains, far from the countries Vokali
 x = choice(Tests) 
 print("Your test case is: ", x)
 
-if 's' in (answer:=input("Press On 's' to Start Typing... and 'e' to exit. . .  ")):
+if 's' in (answer:=input("Press On 's' to Start Typing... and 'e' to exit. . .  ").lower):
    print("Startng in...")
    for i in range(3,0,-1):
       print(i)
