@@ -4,6 +4,11 @@ from colorama import  Fore
 
 # -------------------------------------------------------------------
 
+class TimerProgram:
+   def __enter__(self):
+      global start_t 
+      start_t = time()
+
 print(Fore.RED + 'Typing Speedometer')
 print(Fore.WHITE)
 
