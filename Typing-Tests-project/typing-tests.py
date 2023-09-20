@@ -8,21 +8,11 @@ class TimerProgram:
    def __enter__(self):
       global start_t 
       start_t = time()
-
-
-   
-
-   if len(y) == 100:
-      print("calculating speed and accuracy...")
-      for i in range(100):
-         if x[i] == input_text[i]:
-            accuracy += 1
-   else: 
-      print(Fore.LIGHTRED_EX + "You did not reach 100 Characters.")
-      exit()
-   return accuracy
-         
-
+   def __exit__(self, exc_type, exc_value, exc_traceback):
+      time_All = time() - start_t
+      
+      
+      
 
 
 print(Fore.RED + 'Typing Speedometer')
