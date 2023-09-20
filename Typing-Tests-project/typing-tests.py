@@ -9,24 +9,9 @@ class TimerProgram:
       global start_t 
       start_t = time()
 
-   def __exit__(self, exc_type, exc_value, exc_traceback):
-      time_All = time() - start_t
-      Speed_function(time_All)
-      
-      check(y)
-      print(Fore.GREEN)
-      print(f"Speed: {int(Type_Speed)} Characters Per Minute.")
-      print(f"Accuracy: {accuracy}%.")
-      
+
    
-def Speed_function(time):
-   global Type_Speed
-   Type_Speed = 100*60 // time
-   return Type_Speed
-def check(input_text):
-   global accuracy
-   accuracy = 0
-   
+
    if len(y) == 100:
       print("calculating speed and accuracy...")
       for i in range(100):
@@ -54,9 +39,3 @@ if 's' in (answer:=input("Press On 's' to Start Typing... and 'e' to exit. . .  
    for i in range(3,0,-1):
       print(i)
       sleep(1)
- 
-   with TimerProgram():
-      y = input("Type The Text:")
-else:
-   exit()
-
