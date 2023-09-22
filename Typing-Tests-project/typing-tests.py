@@ -32,5 +32,5 @@ if 's' in (answer:=input("Press On 's' to Start Typing... and 'e' to exit. . .  
    for i in range(3,0,-1):
       print(i)
       sleep(1)
-with TimerProgram:
-   Tests.choice()
+   with TimerProgram:
+      y = input("Type The Text:")
