@@ -11,7 +11,10 @@ class TimerProgram:
    def __exit__(self, exc_type, exc_value, exc_traceback):
       time_All = time() - start_t
       
-      
+def Speed_function(time):
+   global Type_Speed
+   Type_Speed = 100*60 // time
+   return Type_Speed
       
 
 
