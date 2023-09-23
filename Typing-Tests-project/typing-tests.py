@@ -34,3 +34,5 @@ if 's' in (answer:=input("Press On 's' to Start Typing... and 'e' to exit. . .  
       sleep(1)
    with TimerProgram:
       y = input("Type The Text:")
+else:
+   exit()
